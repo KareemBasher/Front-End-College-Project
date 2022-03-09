@@ -1,0 +1,711 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: rgb(50, 50, 50);
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 231;
+
+    background: #333333;
+    color: white;
+}
+
+.nav-items {
+    display: flex;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+
+    padding: 1.2em;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2em;
+    transition: background 200ms linear;
+}
+
+.logo {
+    background: teal;
+    padding: 0.5em 1em;
+    font-family: 'Oooh Baby', cursive;
+    font-size: 2em;
+}
+
+nav ul, nav li {
+    display: flex;
+}
+
+.logo:hover {
+    background: rgb(50, 50, 50);
+}
+
+nav a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: teal;
+    transition: width 200ms ease-in;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.search-bar {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 3px;
+    border: 2px solid teal;
+    border-radius: 50px;
+}
+
+.search-bar-input {
+    flex-grow: 1;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1em;
+    padding: 0 0.5em;
+    color: white;
+    border: none;
+    background: none;
+}
+
+.search-bar-input::placeholder {
+    color: white;
+}
+
+.search-bar-input:focus {
+    outline: none;
+}
+
+.search-bar-submit {
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0;
+    background: teal;
+    border-radius: 50%;
+}
+
+.error-msg {
+    width: 130%;
+    height: 200%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50px;
+    visibility: hidden;
+    opacity: 0;
+    
+    background: teal;
+    border-radius: 100px 100px 100px 30px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    transition: opacity 300ms ease-in;
+}
+
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.back-top {
+    width: 60px;
+    height: 60px;
+    color: teal;
+    font-weight: 900;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    position: absolute;
+    right: 100px;
+    bottom: 500px;
+    background: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.enable {
+    opacity: 1;
+}
+
+.logged-in {
+    width: 20%;
+    height: 5em;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Bellota Text', cursive;
+    font-size: 1.2em;
+    color: white;
+    background: rgba(0, 128, 128, 0.6);
+    transition: opacity 300ms linear;
+}
+
+.logged-in-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Moaz */
+.background-img {
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+    filter: blur(3px);
+}
+
+.head
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.tex
+{
+    color:white;
+    font-family: 'Bellota Text', cursive;
+    font-size: 40px;
+    text-align: left;
+    padding: 1.5em 0;
+}
+
+.mex
+{
+    text-align: center;
+    padding: 1.5em 0;
+    color:white;
+    font-size: 30px;
+    font-family: 'Bellota Text', cursive;
+    font-style: italic;
+}
+
+.middle-text {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 8em;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.trademark {
+    font-family: none;
+    font-size: 0.21em;
+    -webkit-text-stroke-width: 0;
+}
+
+/* Abdalla */
+.our-work {
+    background: white;
+    padding-bottom: 8em;
+}
+
+.title {
+    display: grid;
+    place-items: center;
+    padding: 5em 0;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.paragraph {
+    width: 80%;
+    font-family: 'Bellota Text', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes {
+    width: 30%;
+    min-height: 300px;
+    max-height: 400px;
+    padding: 1em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 2.5em;
+    background: #f2f3f7;
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+                -0.5em -0.5em 1em #ffffff;
+    border-radius: 20px; 
+}
+
+.box-title {
+    text-align: center;
+    color: #6C758F;
+    font-family: 'Bellota Text', cursive;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-bottom: 1em;
+}
+
+/* Youssef */
+.subscription-section
+{
+    background-color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.sub-head {
+    background: teal;
+}
+
+.panel-of-sub
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subscription-section p, h1
+{
+    font-size: 2em;
+    font-family: 'Bellota Text', cursive;
+    font-weight: bolder;
+    color: #6C758F;
+}
+
+.subscription-section h1
+{
+    font-size: 2em;
+}
+
+.Ketofan-Section, .Panadol-Section, .Comtrex-Section
+{
+    background-color: #f2f3f7;
+    overflow: hidden;
+    width: 20%;
+    border-radius: 15px;
+    margin-top: 60px;
+    padding-bottom: 1.5em;
+    z-index: 0;
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+                -0.5em -0.5em 1em #ffffff;
+}
+
+.Ketofan-Section{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+
+.Panadol-Section
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Comtrex-Section
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Ketofan-Section h1, .Panadol-Section h1, .Comtrex-Section h1
+{
+    color: white;
+    font-family: 'Bellota Text', cursive;
+    position: relative;
+    font-size: 2.5em;
+    padding: 30px 0;
+}
+
+.Ketofan-Section p, .Panadol-Section p, .Comtrex-Section p
+{
+    color: #6c758f;
+    padding: 20px 0;
+    font-size: 1.18em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.btn{
+    width: 40%;
+    border-radius: 15px;
+    background: none;
+    color: #51576b;
+    border: 2px solid teal;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+    background: teal;
+    color: white;
+}
+
+/* Mahrous */
+.container
+{
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 5em 0;
+}
+
+.teams-title {
+    text-align: center;
+    color: #6C758F;
+    padding: 80px 0;
+    font-size: 2em;
+    font-family: 'Bellota Text', cursive;
+    font-weight: bolder;
+    background: white;
+}
+
+.container .card
+{
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: #f2f3f7;
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+                -0.5em -0.5em 1em #ffffff;
+    border-radius: 20px;
+}
+
+.container .card .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.container .card .content .imgbx
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.container .card .content .imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentbx h4
+{
+    color: #36187d;
+    font-family: 'Bellota Text', cursive;
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.container .card .content .contentbx h5
+{
+    color: #6c758f;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .card .content .sci a
+{
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+
+.container .card .content .sci a:hover
+{
+    color: #0196e3;
+}
+
+/* Baraa */
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8vh;
+    padding: 10vh 0;
+    background: white;
+}
+
+.contact-body {
+    height: 68vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    padding-bottom: 30vh;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.form-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-img {
+    height: 60vh;
+    border-radius: 50%;
+}
+
+.text-area {
+    width: 100%;
+    padding: 1em 3em;
+    font-family: 'Bellota Text', cursive;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #6c758f;
+}
+
+.text-area label {
+    display: flex;
+}
+
+.text-area span {
+    color: red;
+}
+
+.text-area textarea {
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid lightgray;
+    border-bottom-width: 4px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.text-area textarea:focus {
+    border-color: rgb(81, 141, 141);
+}
+
+.text-field {
+    margin: 1em 0;
+}
+
+.text-area input {
+    width: 100%;
+    height: 3em;
+    padding: 0 1em;
+    font-size: 0.7em;
+    outline: none;
+    border: 1px solid lightgray;
+    border-bottom-width: 4px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.text-area input:focus {
+    border-color: rgb(81, 141, 141);
+}
+
+.submit-btn {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1em 0;
+}
+
+#formBtn {
+    width: 100%;
+    height: 2.3em;
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background: teal;
+    transition: 200ms ease-in-out;
+}
+
+#formBtn:hover {
+    background: #acb5c2;
+    color: white;
+}
+
+#formBtn:active {
+    background: #888f99;
+}
+
+form {
+    position: relative;
+}
+
+.form-error-msg {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+
+    color: #6c758f;
+    padding: 1.2em 3em;
+    background: #F2F3F7;
+    border-radius: 100px 100px 100px 30px;
+    transition: opacity 300ms ease-in;
+}
+
+/* Ibrahim Mohamed */
+.footer {
+    width: 100%;
+    height: auto;
+}
+.first-footer-div,
+.second-footer-div,
+.third-footer-div {
+    width: 100%;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+}
+
+.first-footer-div {
+    height: 60px;
+    background: #333333;
+    line-height: 60px;
+    display: flex;
+}
+.second-footer-div {
+    height: 300px;
+    background: #4c5155b9;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.third-footer-div {
+    height: 40px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.third-footer-div a {
+    color: white;
+    margin-left: 6px;
+}
+
+.first-footer-text {
+    width: 50%;
+    margin-left: 10px;
+    min-width: 350px;
+}
+.social-icons {
+    width: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 350px;
+}
+.social-links {
+    display: inline-block;
+    color: white;
+    margin: 0 20px;
+}
+
+.second-footer-1,
+.second-footer-2,
+.second-footer-3 {
+    width: 33%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.second-footer-1 {
+    margin-left: 40px;
+}
+
+h3 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin-top: 5px;
+    background: black;
+}
+
+.second-footer-p {
+    margin: 30px 0;
+    line-height: 1.25em;
+    text-transform: capitalize;
+    z-index: 10;
+}
+.footer-icon {
+    display: inline;
+}
+.second-footer-p span {
+    margin-left: 15px;
+}

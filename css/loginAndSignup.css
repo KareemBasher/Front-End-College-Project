@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellota Text', cursive;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.background-img {
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+    filter: blur(3px);
+}
+
+.wrapper
+{
+    width: 20%;
+    background: #fff;
+    padding: 1.8em;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title-text
+{
+    display: flex;
+    width: 200%;
+}
+
+.title
+{
+    width: 50%;
+    font-size: 2.1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.password-field, .pharmacy-name, .login-btn, .e-mail
+{
+    height: 3.1em;
+    width: 100%;
+    margin-top: 1.01em;
+}
+
+.pharmacy-name input, .password-field input, .login-btn input, .e-mail input
+{
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 1.01em;
+    font-size: 1.01em;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    border-bottom-width: 4px;
+    transition: all 0.3s ease-in;
+}
+
+.login-btn input {
+    border-bottom-width: 0;
+}
+
+.pharmacy-name input:focus, .password-field input:focus, .e-mail input:focus
+{
+    border-color: rgb(81, 141, 141);
+}
+
+.login-btn input
+{
+    color: #fff;
+    font-weight: 600;
+    padding-left: 0px;
+    cursor: pointer;
+    background: teal;
+}
+
+.pass-link, .signup-link, .login-link
+{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+a
+{
+    color: teal;
+    text-decoration: none;
+}
+
+.back-home {
+    width: 4em;
+    height: 4em;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+form {
+    position: relative;
+}
+
+.form-error-msg {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -100px;
+    visibility: hidden;
+    opacity: 0;
+
+    color: #6c758f;
+    padding: 1.5em 3em;
+    background: #F2F3F7;
+    border-radius: 100px 100px 100px 30px;
+    transition: opacity 300ms ease-in;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
