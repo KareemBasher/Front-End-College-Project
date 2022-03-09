@@ -13,7 +13,7 @@ Creating a website using HTML, CSS, and JavaScript. Each member was tasked eaith
 - Contact page.
 
 ### Main Page
-Main page consists of '4' sections/areas:
+Main page consists of sections/areas:
 
 1. Intro.
 ![Intro Section](https://i.imgur.com/JbhGDks.png)
@@ -23,3 +23,10 @@ Main page consists of '4' sections/areas:
 ![Prices](https://i.imgur.com/pIpZWdJ.png)
 4. Our Team.
 ![Team](https://i.imgur.com/u7Q3EH8.png)
+
+---
+
+### Contact Us
+Contact Us page consits of an HTML form requiring an E-mail, Full Name, Address, Number, and a Message.
+
+![Contact Us](https://i.imgur.com/h3HL5g2.png)
