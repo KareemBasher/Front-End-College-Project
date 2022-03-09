@@ -1,4 +1,4 @@
-# Front-End-College-Project
+# Eshfeny Web Development College Project
 
 ## Overview
 Final Project for first semester Web Development Course.
