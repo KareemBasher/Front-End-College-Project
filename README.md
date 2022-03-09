@@ -1,18 +1,18 @@
 # Front-End-College-Project
 
-# Overview
+## Overview
 Final Project for first semester Web Development Course.
 
-# Objective
+## Objective
 Creating a website using HTML, CSS, and JavaScript. Each member was tasked eaither a whole page or a section in a page.
 
-# Pages
+## Pages
 - Main page.
 - login page.
 - Signup page.
 - Contact page.
 
-## Main Page
+### Main Page
 Main page consists of '4' sections/areas:
 
 1. Intro.
