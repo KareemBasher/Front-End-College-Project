@@ -58,7 +58,7 @@ The Password is encrypted with a simple hashing technique in `signup.js` before 
 ## Team/Contributors
 * [Karim Bashir](https://github.com/KareemBasher)
 * [Mohamed Ibrahim](https://github.com/mohamedIbrahim3)
-* [Mohame Ashraf](https://github.com/Lazarus2001)
+* [Mohamed Ashraf](https://github.com/Lazarus2001)
 * [Moaz Ahmed]()
 * [Youssef Mohamed](https://github.com/YoussefMSaber)
 * [Abdalla Tarik]()
