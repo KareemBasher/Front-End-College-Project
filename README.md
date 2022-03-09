@@ -52,3 +52,14 @@ Login page is an HTML form requiring the E-mail and Password that are saved in a
 The Password is encrypted with a simple hashing technique in `signup.js` before being sent to `login.js`.
 
 ![Login](https://i.imgur.com/AS3FB3C.png)
+
+---
+
+## Team/Contributors
+* [Karim Bashir](https://github.com/KareemBasher)
+* [Mohamed Ibrahim](https://github.com/mohamedIbrahim3)
+* [Mohame Ashraf]()
+* [Moaz Ahmed]()
+* [Youssef Mohamed](https://github.com/YoussefMSaber)
+* [Abdalla Tarik]()
+* [Al-Baraa Reda]()
