@@ -18,7 +18,7 @@ sections.forEach(section => {
     elements.push(section.innerHTML.toLowerCase());
 });
 
-// Function for when the search button is clicked or the Enter key is hit
+// Search button function.
 const btnClicked = () => {
     const searchVal = document.querySelector(".search-bar-input").value.toLowerCase();
 
