@@ -61,5 +61,5 @@ The Password is encrypted with a simple hashing technique in `signup.js` before 
 * [Mohamed Ashraf](https://github.com/Lazarus2001)
 * [Moaz Ahmed](https://github.com/moazahmed22)
 * [Youssef Mohamed](https://github.com/YoussefMSaber)
-* [Abdalla Tarik](https://github.com/Bodipie)
+* [Abdalla Tarek](https://github.com/Bodipie)
 * [Al-Baraa Reda]()
